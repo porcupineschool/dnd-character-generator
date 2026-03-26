@@ -1,0 +1,339 @@
+html {
+  background:
+    radial-gradient(circle at top, rgba(183, 139, 51, 0.18), transparent 28%),
+    linear-gradient(180deg, #e4d2b1 0%, #f4efe6 38%, #f9f7f2 100%);
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #1f1a17;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 36px 0 64px;
+}
+
+.intro {
+  margin: 0 auto 18px;
+  padding: 12px 4px;
+}
+
+.kicker {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #8c2f1b;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 0.95;
+}
+
+.lede {
+  margin: 12px 0 0;
+  max-width: 58ch;
+  font-size: 1.04rem;
+  line-height: 1.65;
+  color: #5f534a;
+}
+
+.dnd-generator-root {
+  --paper: #f6efe1;
+  --ink: #1f1a17;
+  --accent: #8c2f1b;
+  --accent-dark: #5e1d12;
+  --gold: #b78b33;
+  --panel: #fffaf1;
+  --line: rgba(31, 26, 23, 0.14);
+  --muted: #6f6256;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top, rgba(183, 139, 51, 0.18), transparent 34%),
+    linear-gradient(180deg, #eadbc1 0%, #f9f5ed 100%);
+  border: 2px solid rgba(94, 29, 18, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(31, 26, 23, 0.12);
+  padding: 24px;
+  max-width: 1120px;
+  margin: 24px auto;
+  min-height: 96px;
+}
+
+.dnd-generator-root * {
+  box-sizing: border-box;
+}
+
+.dnd-generator-root .dnd-shell {
+  display: grid;
+  gap: 20px;
+}
+
+.dnd-generator-root .dnd-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.dnd-generator-root h1,
+.dnd-generator-root h2,
+.dnd-generator-root h3,
+.dnd-generator-root p {
+  margin: 0;
+}
+
+.dnd-generator-root .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.dnd-generator-root .title {
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  line-height: 1;
+}
+
+.dnd-generator-root .subtitle {
+  max-width: 56ch;
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.dnd-generator-root .dnd-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dnd-generator-root button {
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  padding: 12px 18px;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.dnd-generator-root button:hover {
+  transform: translateY(-1px);
+}
+
+.dnd-generator-root .primary-btn {
+  background: linear-gradient(135deg, var(--accent) 0%, #a54122 100%);
+  color: #fff8ed;
+  box-shadow: 0 10px 24px rgba(140, 47, 27, 0.28);
+}
+
+.dnd-generator-root .secondary-btn {
+  background: rgba(255, 250, 241, 0.92);
+  color: var(--ink);
+  border: 1px solid rgba(31, 26, 23, 0.12);
+}
+
+.dnd-generator-root .grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+}
+
+.dnd-generator-root .panel {
+  background: linear-gradient(180deg, rgba(255, 250, 241, 0.96) 0%, rgba(255, 248, 239, 0.9) 100%);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.dnd-generator-root .hero-card {
+  display: grid;
+  gap: 16px;
+}
+
+.dnd-generator-root .hero-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.dnd-generator-root .character-name {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 0.95;
+}
+
+.dnd-generator-root .tagline {
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: 1.02rem;
+}
+
+.dnd-generator-root .crest {
+  min-width: 132px;
+  min-height: 132px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(183, 139, 51, 0.18), rgba(140, 47, 27, 0.18)),
+    var(--panel);
+  border: 1px solid var(--line);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dnd-generator-root .quick-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dnd-generator-root .quick-stat,
+.dnd-generator-root .ability,
+.dnd-generator-root .detail-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.52);
+  padding: 14px;
+}
+
+.dnd-generator-root .label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.dnd-generator-root .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dnd-generator-root .small {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.dnd-generator-root .section-title {
+  font-size: 1.12rem;
+  margin-bottom: 12px;
+}
+
+.dnd-generator-root .abilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dnd-generator-root .ability-score {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.dnd-generator-root .ability-mod {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.dnd-generator-root .detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dnd-generator-root ul {
+  padding-left: 18px;
+  margin: 8px 0 0;
+}
+
+.dnd-generator-root li + li {
+  margin-top: 5px;
+}
+
+.dnd-generator-root .meta-list {
+  display: grid;
+  gap: 10px;
+}
+
+.dnd-generator-root .meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.dnd-generator-root .meta-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dnd-generator-root .summary-box {
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.dnd-generator-root .footnote {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.dnd-generator-root .error-panel {
+  background: rgba(140, 47, 27, 0.08);
+  border: 1px solid rgba(140, 47, 27, 0.25);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+@media (max-width: 920px) {
+  .dnd-generator-root .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    width: min(100% - 20px, 1180px);
+    padding-top: 24px;
+  }
+
+  .dnd-generator-root {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .dnd-generator-root .quick-stats,
+  .dnd-generator-root .abilities,
+  .dnd-generator-root .detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .dnd-generator-root .quick-stats,
+  .dnd-generator-root .abilities,
+  .dnd-generator-root .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
